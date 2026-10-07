@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Build artifacts
+build/
+dist/
+*.spec.bak
+
+# IDE / editor
+.vs/
+.vscode/
+*.suo
+
+# Runtime / user-local state (moves to %APPDATA% during the migration;
+# kept here only as legacy behavior until Phase 1 lands)
+.app_prefs.json
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Claude Code local settings (machine-specific, not shared)
+.claude/settings.local.json
