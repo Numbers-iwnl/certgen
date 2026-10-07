@@ -4,6 +4,12 @@
 
 > 🇧🇷 Gerador de certificados em lote: modelo em PDF + planilha (.xlsx) → um PDF por participante, com envio opcional por e-mail. Interface em português.
 
+| | |
+|---|---|
+| **Status** | In use (~3 events a year) |
+| **Impact** | Hundreds to thousands of certificates per event, generated and e-mailed in minutes. Before, it took days of editing names into a Word template and sending them one by one |
+| **Build time** | v1 in a day; this rewrite in a day, with 185 tests (traditional estimates: 1–2 and 4–6 weeks) |
+
 ![certgen main window](docs/app.png)
 
 | Template (input) | Generated certificate (output) |
@@ -60,6 +66,10 @@ pytest
 ## Stack
 
 Python · PySide6 (Qt) · PyMuPDF · openpyxl · qrcode · PyInstaller · pytest
+
+## How it was built
+
+Built with AI coding agents (Claude Code and OpenAI Codex) writing the code. My part was specifying the behaviour (see `PLAN.md` and `PARITY.md`), reviewing the generated code, testing with real templates and spreadsheets, and packaging it for the team. Traditional estimates are my own ballpark for one developer writing it by hand.
 
 ---
 
